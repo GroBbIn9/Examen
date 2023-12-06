@@ -1,0 +1,89 @@
+﻿<Window x:Class="Variant3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Variant3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="850" Width="850" WindowState="Maximized">
+    <Window.Resources>
+        <!-- Data Template (applied to each bound task item in the task collection) -->
+        <DataTemplate x:Key="Kniga3">
+            <Border Name="border" BorderBrush="DarkSlateBlue" BorderThickness="2"  
+      CornerRadius="2" Padding="11" Margin="11">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Grid.Row="12" Grid.Column="0" Padding="0,0,5,0" Text="Id:"/>
+                    <TextBlock Grid.Row="12" Grid.Column="1" Text="{Binding Path=id}"/>
+
+                    <TextBlock Grid.Row="0" Grid.Column="0" Padding="0,0,5,0" Text="Surname:"/>
+                    <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding Path=surname}"/>
+
+                    <TextBlock Grid.Row="1" Grid.Column="0" Padding="0,0,5,0" Text="Name:"/>
+                    <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding Path=name}"/>
+
+                    <TextBlock Grid.Row="2" Grid.Column="0" Padding="0,0,5,0" Text="Patronymic:"/>
+                    <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding Path=patronymic}"/>
+
+                    <TextBlock Grid.Row="3" Grid.Column="0" Padding="0,0,5,0" Text="PassportS:"/>
+                    <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding Path=passportS}"/>
+
+                    <TextBlock Grid.Row="4" Grid.Column="0" Padding="0,0,5,0" Text="PassportN:"/>
+                    <TextBlock Grid.Row="4" Grid.Column="1" Text="{Binding Path=passportN}"/>
+
+                    <TextBlock Grid.Row="5" Grid.Column="0" Padding="0,0,5,0" Text="Inventory:"/>
+                    <TextBlock Grid.Row="5" Grid.Column="1" Text="{Binding Path=inventory}"/>
+
+                    <TextBlock Grid.Row="6" Grid.Column="0" Padding="0,0,5,0" Text="CostInventory:"/>
+                    <TextBlock Grid.Row="6" Grid.Column="1" Text="{Binding Path=costInventory}"/>
+
+                    <TextBlock Grid.Row="7" Grid.Column="0" Padding="0,0,5,0" Text="Deposit:"/>
+                    <TextBlock Grid.Row="7" Grid.Column="1" Text="{Binding Path=deposit}"/>
+
+                    <TextBlock Grid.Row="8" Grid.Column="0" Padding="0,0,5,0" Text="Tarrif:"/>
+                    <TextBlock Grid.Row="8" Grid.Column="1" Text="{Binding Path=tarrif}"/>
+
+                    <TextBlock Grid.Row="9" Grid.Column="0" Padding="0,0,5,0" Text="DateTimeBegin:"/>
+                    <TextBlock Grid.Row="9" Grid.Column="1" Text="{Binding Path=dateTimeBegin}"/>
+
+                    <TextBlock Grid.Row="10" Grid.Column="0" Padding="0,0,5,0" Text="DateTimeEnd:"/>
+                    <TextBlock Grid.Row="10" Grid.Column="1" Text="{Binding Path=dateTimeEnd}"/>
+
+                    <TextBlock Grid.Row="11" Grid.Column="0" Padding="0,0,5,0" Text="CostRent:"/>
+                    <TextBlock Grid.Row="11" Grid.Column="1" Text="{Binding Path=costRent}"/>
+
+                </Grid>
+            </Border>
+        </DataTemplate>
+    </Window.Resources>
+    <DockPanel>
+        <Label DockPanel.Dock="Top" FontSize="18" Margin="5"
+               Content="Information:"></Label>
+        <ListBox x:Name="Information"
+                   ItemsSource="{Binding}"
+                   ItemTemplate="{StaticResource Kniga3}"
+                   HorizontalContentAlignment="Stretch"
+                   IsSynchronizedWithCurrentItem="True"
+                   Margin="11,0,11,11"></ListBox>
+    </DockPanel>
+</Window>
