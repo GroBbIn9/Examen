@@ -45,40 +45,32 @@
                     <TextBlock Grid.Row="2" Grid.Column="0" Padding="0,0,5,0" Text="Patronymic:"/>
                     <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding Path=patronymic}"/>
 
-                    <TextBlock Grid.Row="3" Grid.Column="0" Padding="0,0,5,0" Text="PassportS:"/>
-                    <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding Path=passportS}"/>
+                    <TextBlock Grid.Row="3" Grid.Column="0" Padding="0,0,5,0" Text="Passport:"/>
+                    <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding Path=passport}"/>
 
-                    <TextBlock Grid.Row="4" Grid.Column="0" Padding="0,0,5,0" Text="PassportN:"/>
-                    <TextBlock Grid.Row="4" Grid.Column="1" Text="{Binding Path=passportN}"/>
+                    <TextBlock Grid.Row="4" Grid.Column="0" Padding="0,0,5,0" Text="Country:"/>
+                    <TextBlock Grid.Row="4" Grid.Column="1" Text="{Binding Path=country}"/>
 
-                    <TextBlock Grid.Row="5" Grid.Column="0" Padding="0,0,5,0" Text="Inventory:"/>
-                    <TextBlock Grid.Row="5" Grid.Column="1" Text="{Binding Path=inventory}"/>
+                    <TextBlock Grid.Row="5" Grid.Column="0" Padding="0,0,5,0" Text="Oneday:"/>
+                    <TextBlock Grid.Row="5" Grid.Column="1" Text="{Binding Path=oneday}"/>
 
-                    <TextBlock Grid.Row="6" Grid.Column="0" Padding="0,0,5,0" Text="CostInventory:"/>
-                    <TextBlock Grid.Row="6" Grid.Column="1" Text="{Binding Path=costInventory}"/>
+                    <TextBlock Grid.Row="6" Grid.Column="0" Padding="0,0,5,0" Text="Transport:"/>
+                    <TextBlock Grid.Row="6" Grid.Column="1" Text="{Binding Path=Transport}"/>
 
-                    <TextBlock Grid.Row="7" Grid.Column="0" Padding="0,0,5,0" Text="Deposit:"/>
-                    <TextBlock Grid.Row="7" Grid.Column="1" Text="{Binding Path=deposit}"/>
+                    <TextBlock Grid.Row="7" Grid.Column="0" Padding="0,0,5,0" Text="Вeginning:"/>
+                    <TextBlock Grid.Row="7" Grid.Column="1" Text="{Binding Path=Вeginning}"/>
 
-                    <TextBlock Grid.Row="8" Grid.Column="0" Padding="0,0,5,0" Text="Tarrif:"/>
-                    <TextBlock Grid.Row="8" Grid.Column="1" Text="{Binding Path=tarrif}"/>
-
-                    <TextBlock Grid.Row="9" Grid.Column="0" Padding="0,0,5,0" Text="DateTimeBegin:"/>
-                    <TextBlock Grid.Row="9" Grid.Column="1" Text="{Binding Path=dateTimeBegin}"/>
-
-                    <TextBlock Grid.Row="10" Grid.Column="0" Padding="0,0,5,0" Text="DateTimeEnd:"/>
-                    <TextBlock Grid.Row="10" Grid.Column="1" Text="{Binding Path=dateTimeEnd}"/>
-
-                    <TextBlock Grid.Row="11" Grid.Column="0" Padding="0,0,5,0" Text="CostRent:"/>
-                    <TextBlock Grid.Row="11" Grid.Column="1" Text="{Binding Path=costRent}"/>
+                    <TextBlock Grid.Row="8" Grid.Column="0" Padding="0,0,5,0" Text="End:"/>
+                    <TextBlock Grid.Row="8" Grid.Column="1" Text="{Binding Path=End}"/>
+                 
 
                 </Grid>
             </Border>
         </DataTemplate>
     </Window.Resources>
     <DockPanel>
-        <Label DockPanel.Dock="Top" FontSize="18" Margin="5"
-               Content="Information:"></Label>
+        <Label DockPanel.Dock="Top" FontSize="30" Margin="5"
+               Content="Вывод информации:"></Label>
         <ListBox x:Name="Information"
                    ItemsSource="{Binding}"
                    ItemTemplate="{StaticResource Kniga3}"

@@ -4,7 +4,7 @@
     "Surname": "Иванова",
     "Name": "Татьяна",
     "Patronymic": "Владимировна",
-    "Passport": "4619658954",
+    "Passport": 4619658954,
     "Country": "Индия",
     "Oneday": 6500.00,
     "Transport": "1500.00",
@@ -16,7 +16,7 @@
     "Surname": "Лебедев",
     "Name": "Никита",
     "Patronymic": "Семенович",
-    "Passport": "4958412589",
+    "Passport": 4958412589,
     "Country": "Малайзия",
     "Oneday": "2000.00",
     "Transport": "1000.00",
@@ -28,7 +28,7 @@
     "Surname": "Иванова",
     "Name": "Милана",
     "Patronymic": "Марковна",
-    "Passport": "2563874512",
+    "Passport": 2563874512,
     "Country": "Франция",
     "Oneday": "12500.00",
     "Transport": "5000.00",
@@ -107,4 +107,4 @@
     "Вeginning": "03.03.2021",
     "End ": "12.03.2021 "
   }
-] 
+]

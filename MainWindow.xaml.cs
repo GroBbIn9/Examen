@@ -34,10 +34,10 @@ namespace Variant3
             try
             {
 
-                string json = System.IO.File.ReadAllText(@"Kniga3.json");
+                string json = System.IO.File.ReadAllText(@"tableConvert.json");
 
 
-                Information.ItemsSource = JsonConvert.DeserializeObject<List<UserZaivka>>(json);
+                Information.ItemsSource = JsonConvert.DeserializeObject<List<User>>(json);
             }
             catch (Exception ex)
             {
